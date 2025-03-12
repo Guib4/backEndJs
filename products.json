@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Laranja",
+    "description": "Fruta",
+    "price": 5,
+    "thumbnail": "",
+    "code": 1,
+    "stock": 10
+  }
+]
