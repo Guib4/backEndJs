@@ -4,8 +4,8 @@ class ProductManager {
     constructor(path) {
         this.path = path;
         this.products = [];
-        this.autoIncrementId = 1; // Start ID from 1
-        this.loadProducts(); // Load existing products from file
+        this.autoIncrementId = 1; // Inicia ID em 1
+        this.loadProducts(); // Carrega produtos existentes no arquivo
     }
 
     loadProducts() {
@@ -56,8 +56,4 @@ class ProductManager {
     }
 }
 
-// Example usage
-const productManager = new ProductManager('products.json');
-console.log(productManager.getProducts());
-productManager.addProduct({ title: "Laranja", description: "Fruta", price: 5.00, thumbnail: "", code: 1, stock: 10 });
-console.log(productManager.getProducts());
+module.exports = ProductManager;
